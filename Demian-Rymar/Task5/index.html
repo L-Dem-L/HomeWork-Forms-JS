@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
+    <title>Task5</title>
+</head>
+
+<body>
+    <h1>Відмітка присутніх на парі</h1>
+
+    <!-- Форма вибору групи та пари -->
+    <label for="group">Група:</label>
+    <select id="group">
+        <option value="group1">Група 1</option>
+        <option value="group2">Група 2</option>
+    </select>
+    <br>
+
+    <label for="lesson">Пара:</label>
+    <select id="lesson">
+        <option value="lesson1">Пара 1</option>
+        <option value="lesson2">Пара 2</option>
+    </select>
+    <br>
+
+    <!-- Форма відмітки присутніх -->
+    <label for="topic">Тема заняття:</label>
+    <input type="text" id="topic">
+    <br>
+
+    <label for="attendance">Присутні:</label>
+    <input type="text" id="attendance">
+    <br>
+
+    <button onclick="markAttendance()">Відмітити присутніх</button>
+
+    <!-- Таблиця з відміченими присутніми -->
+    <h2>Відмічені присутні:</h2>
+    <table id="attendanceTable">
+        <tr>
+            <th>Група</th>
+            <th>Пара</th>
+            <th>Тема заняття</th>
+            <th>Присутні</th>
+        </tr>
+    </table>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

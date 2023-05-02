@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
+    <title>Task2</title>
+</head>
+
+<body>
+    <h1>Тестування з двома варіантами відповіді</h1>
+    <form>
+        <p>Питання 1: Який кольор має небо в ясну погоду?</p>
+        <input type="radio" name="q1" value="a">Червоний<br>
+        <input type="radio" name="q1" value="b">Синій<br>
+
+        <p>Питання 2: Яка назва столиці України?</p>
+        <input type="radio" name="q2" value="a">Львів<br>
+        <input type="radio" name="q2" value="b">Київ<br>
+
+        <br>
+        <button type="button" onclick="checkAnswers()">Перевірити відповіді</button>
+    </form>
+
+    <p id="result"></p>
+    <script src="main.js"></script>
+</body>
+
+</html>

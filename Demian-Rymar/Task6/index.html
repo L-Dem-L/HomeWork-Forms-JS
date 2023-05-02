@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
+    <title>Task6</title>
+</head>
+
+<body>
+    <h1>Забронювати квитки на поїзд</h1>
+
+    <!-- Форма вибору напрямку та дати -->
+    <label for="direction">Напрямок:</label>
+    <select id="direction">
+        <option value="Lviv-Kyiv">Львів - Київ</option>
+        <option value="Kyiv-Lviv">Київ - Львів</option>
+    </select>
+    <br>
+
+    <label for="date">Дата поїздки:</label>
+    <input type="date" id="date">
+    <br>
+
+    <!-- Форма відмітки заброньованих місць -->
+    <label for="seats">Місця:</label>
+    <input type="text" id="seats">
+    <br>
+
+    <button onclick="bookTickets()">Забронювати квитки</button>
+
+    <!-- Таблиця з заброньованими місцями -->
+    <h2>Заброньовані місця:</h2>
+    <table id="bookingTable">
+        <tr>
+            <th>Напрямок</th>
+            <th>Дата поїздки</th>
+            <th>Місця</th>
+        </tr>
+    </table>
+    <script src="main.js"></script>
+</body>
+
+</html>

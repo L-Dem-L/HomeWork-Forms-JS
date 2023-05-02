@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
+    <title>Task3</title>
+</head>
+
+<body>
+    <h1>Форма для введення стилізованого тексту</h1>
+    <form>
+        <label for="text">Введіть текст:</label><br>
+        <textarea id="text" name="text" rows="5" cols="30"></textarea><br>
+
+        <label for="bold">Bold:</label>
+        <input type="checkbox" id="bold" name="bold"><br>
+
+        <label for="underline">Underline:</label>
+        <input type="checkbox" id="underline" name="underline"><br>
+
+        <label for="italic">Italic:</label>
+        <input type="checkbox" id="italic" name="italic"><br>
+
+        <label for="align">Вирівнювання:</label><br>
+        <select id="align" name="align">
+            <option value="left">Left</option>
+            <option value="right">Right</option>
+            <option value="center">Center</option>
+            <option value="justify">Justify</option>
+        </select><br><br>
+
+        <button type="button" onclick="applyStyles()">Застосувати стилі</button>
+    </form>
+
+    <p id="styled-text"></p>
+    <script src="main.js"></script>
+</body>
+
+</html>
